@@ -18,9 +18,26 @@ Untuk detail mengenai training dan lainnya bisa di lihat pada [notebook.](https:
 ## Instalation
 
 Projek ini menggunakan **python 3.8** jadi pastikan sudah menginstallnya dan ikuti langkah berikut.
+
 **Clone Project**
 ```
 git clone https://github.com/daffatm/plate-detection.git
+```
+**Go to Project Dir**
+```
+cd plate-detection
+```
+**Install Python Virtual Environtment**
+```
+pip install virtualenv
+```
+**Create Virtual Environtment**
+```
+python -m venv venv
+```
+**Activate Virtual Environtment**
+```
+source venv/Scripts/activate
 ```
 **Install Requirements**
 ```
