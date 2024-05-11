@@ -78,5 +78,5 @@ Inference Result:
 ![Inference Result](https://github.com/daffatm/plate-detection/blob/main/asset/Result.png)
 
 Webcam Result:
-![Inference Result](https://github.com/daffatm/plate-detection/blob/main/asset/Realtime%20Result.png)
-*Note: tested on very low power cpu AMD A9-9420 Dual Core*
+![Realtime Result](https://github.com/daffatm/plate-detection/blob/main/asset/Realtime%20Result.png)
+*Note: run on very low power cpu AMD A9-9420 Dual Core*
