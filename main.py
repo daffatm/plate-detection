@@ -18,7 +18,7 @@ if __name__ == '__main__':
     parser.add_argument('--model', type=str, 
                         default='./model/best.onnx', 
                         help ='Path to model.')
-    parser.add_argument('--threshold', type=int, 
+    parser.add_argument('--threshold', type=float,
                         default=0.55, 
                         help ='Threshold for plate detection model.')
     parser.add_argument('--cuda', 

@@ -6,5 +6,5 @@ onnx-simplifier>=0.3.6
 onnxruntime
 onnxruntime-gpu
 tensorflow>=2.4.1
-matplotlib==3.2.1
+matplotlib
 easyocr
