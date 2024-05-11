@@ -4,6 +4,7 @@ Repositori ini berisi implementasi model object detection YOLO v7 Tiny dan Easy 
 
 ## Technical Aspect
 ![Flowchart](https://github.com/daffatm/plate-detection/blob/main/asset/Scheme.jpg)
+
 Untuk penerapannya pada *Real-world scenario* maka semua model yang digunakan adalah model dengan *low power consumption* atau *lightweight model* sehingga diharapkan sistem ini dapat berjalan pada *edge devices*.
 
 **Plate Detection** model di training dengan model pretrain [YOLO v7 Tiny](https://github.com/WongKinYiu/yolov7)  pada dataset pribadi. Alasan digunakannya YOLO v7 Tiny dibandingkan dengan YOLO terbaru seperti v8 atau v9 sebenarnya adalah refrensi pribadi, karna YOLO v7 memiliki repositori terpisah dari Ultralytics sehingga untuk modifikasi kode lebih mudah karna memiliki standalone code serta YOLO v7 juga masih memiliki accuracy dan speed trade off yang baik jika dibandingkan dengan YOLO terbaru.
@@ -50,6 +51,7 @@ Model pytorch telah dikonversi menjadi ONNX (Open Neural Network Exchange) agar 
 |  Model| Image Size | Precision | Recall | mAP@.5 | mAP@.5:.95 | Model Size |
 |--|--|--|--|--|--|--|
 |[best.onnx](https://github.com/daffatm/plate-detection/blob/main/model/best.onnx) | 640 | 0.891 | 0.891 | 0.931 | 0.555 | 23.5 MB |
+
 *Note: tested on private dataset*
 
 ## Result
