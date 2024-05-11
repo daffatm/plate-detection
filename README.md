@@ -71,10 +71,12 @@ Model pytorch telah dikonversi menjadi ONNX (Open Neural Network Exchange) agar 
 
 *Note: tested on private dataset*
 
+> Untuk Performa model OCR, karna data uji yang cukup beragam maka terkadang hasil OCR tidak terlalu baik dan sering terjadi salah deteksi untuk karakter 2 dan Z, 0 dan O, 1 dan I. Maka untuk melakukan improvement perlu dilakukan retrain terhadap data plat nomor dengan keseragaman terutama di bagian format tata letak huruf dan font yang digunakan. Keseragaman data ini juga dapat membuat proses praprocessing gambar sebelum OCR bekerja dengan lebih baik lagi.
+
 ## Result
 Inference Result:
 ![Inference Result](https://github.com/daffatm/plate-detection/blob/main/asset/Result.png)
 
 Webcam Result:
-![Inference Result](https://github.com/daffatm/plate-detection/blob/main/asset/Realtime Result.png)
+![Inference Result](https://github.com/daffatm/plate-detection/blob/main/asset/Realtime%20Result.png)
 *Note: tested on very low power cpu AMD A9-9420 Dual Core*
