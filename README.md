@@ -7,11 +7,11 @@ Repositori ini berisi implementasi model object detection YOLO v7 Tiny dan Easy 
 
 Untuk penerapannya pada *Real-world scenario* maka semua model yang digunakan adalah model dengan *low power consumption* atau *lightweight model* sehingga diharapkan sistem ini dapat berjalan pada *edge devices*.
 
-**Plate Detection** model di training dengan model pretrain [YOLO v7 Tiny](https://github.com/WongKinYiu/yolov7)  pada dataset pribadi. Alasan digunakannya YOLO v7 Tiny dibandingkan dengan YOLO terbaru seperti v8 atau v9 sebenarnya adalah refrensi pribadi, karna YOLO v7 memiliki repositori terpisah dari Ultralytics sehingga untuk modifikasi kode lebih mudah karna memiliki standalone code serta YOLO v7 juga masih memiliki accuracy dan speed trade off yang baik jika dibandingkan dengan YOLO terbaru.
+- **Plate Detection** model di training dengan model pretrain [YOLO v7 Tiny](https://github.com/WongKinYiu/yolov7)  pada dataset pribadi. Alasan digunakannya YOLO v7 Tiny dibandingkan dengan YOLO terbaru seperti v8 atau v9 sebenarnya adalah refrensi pribadi, karna YOLO v7 memiliki repositori terpisah dari Ultralytics sehingga untuk modifikasi kode lebih mudah karna memiliki standalone code serta YOLO v7 juga masih memiliki accuracy dan speed trade off yang baik jika dibandingkan dengan YOLO terbaru.
 
-**Optical Character Recognition (OCR)** model yang digunakan adalah [Easy OCR](https://github.com/JaidedAI/EasyOCR) tanpa melakukan retrain karna tidak adanya data untuk training serta model yang dimiliki Easy OCR sudah cukup baik. Pemilihan model OCR didasarkan pada artikel https://blog.roboflow.com/best-ocr-models-text-recognition/ dimana didapatkan Easy OCR memiliki accuracy dan speed yang cukup baik pada deteksi plat nomor serta low cost.
+- **Optical Character Recognition (OCR)** model yang digunakan adalah [Easy OCR](https://github.com/JaidedAI/EasyOCR) tanpa melakukan retrain karna tidak adanya data untuk training serta model yang dimiliki Easy OCR sudah cukup baik. Pemilihan model OCR didasarkan pada artikel https://blog.roboflow.com/best-ocr-models-text-recognition/ dimana didapatkan Easy OCR memiliki accuracy dan speed yang cukup baik pada deteksi plat nomor serta low cost.
 
-**Super Resolution** model juga digunakan pada projek ini untuk melakukan enhance pada gambar plat nomor setelah di crop agar memiliki hasil yang lebih baik untuk OCR. Untuk super resolution model digunakan pretrain dari repositori [Real TIme Super Resolution](https://github.com/braindotai/Real-Time-Super-Resolution) dengan alasan model ini ringan dan dapat berjalan dengan baik pada CPU.
+- **Super Resolution** model juga digunakan pada projek ini untuk melakukan enhance pada gambar plat nomor setelah di crop agar memiliki hasil yang lebih baik untuk OCR. Untuk super resolution model digunakan pretrain dari repositori [Real TIme Super Resolution](https://github.com/braindotai/Real-Time-Super-Resolution) dengan alasan model ini ringan dan dapat berjalan dengan baik pada CPU.
 
 Untuk detail mengenai training dan lainnya bisa di lihat pada [notebook.](https://github.com/daffatm/plate-detection/tree/main/notebook)
 
@@ -72,4 +72,9 @@ Model pytorch telah dikonversi menjadi ONNX (Open Neural Network Exchange) agar 
 *Note: tested on private dataset*
 
 ## Result
-![Result](https://github.com/daffatm/plate-detection/blob/main/asset/Result.png)
+Inference Result:
+![Inference Result](https://github.com/daffatm/plate-detection/blob/main/asset/Result.png)
+
+Webcam Result:
+![Inference Result](https://github.com/daffatm/plate-detection/blob/main/asset/Realtime Result.png)
+*Note: tested on very low power cpu AMD A9-9420 Dual Core*
