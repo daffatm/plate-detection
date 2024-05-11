@@ -48,10 +48,10 @@ pip install -r requirements.txt
 
 ```
 use webcam: 
-	main.py --source "webcam" --threshold 0.55 --cuda
+	python main.py --source "webcam" --threshold 0.55 --cuda
 
 image inference: 
-	main.py --source "./img/Cars1.png" --threshold 0.55
+	python main.py --source "./img/Cars1.png" --threshold 0.55
 
 ## Automatic Number Plate Recognition ##
 optional arguments:
